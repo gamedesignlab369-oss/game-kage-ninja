@@ -8768,6 +8768,9 @@ window.__kage = {
 };
 requestAnimationFrame(frame);
 </script>
+<script>
+try { if ("serviceWorker" in navigator) { window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); }); } } catch (e) {}
+</script>
 
 </body>
 </html>
